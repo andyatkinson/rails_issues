@@ -1,6 +1,6 @@
-Smallest possible Rails app
+Script to generate Rails app to test issues
 
-Copied from [this gist](https://gist.github.com/bronzle/b911103cdbec55edd8b9). The purpose of this is to be able to have a reference to an easy way to create the smallest possible Rails app to reproduce an issue.
+Copied from [this gist](https://gist.github.com/bronzle/b911103cdbec55edd8b9). To use, run: `ruby sample_app.rb`
 
 Issues being investigated:
 
