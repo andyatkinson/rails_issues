@@ -18,3 +18,5 @@ Issues being investigated:
  @null=false,
  @sql_type="bigint">
 ```
+
+ * [18611](https://github.com/rails/rails/issues/18611)
