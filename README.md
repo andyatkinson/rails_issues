@@ -36,9 +36,11 @@ Issues being investigated:
   What is a sequence?
   http://www.neilconway.org/docs/sequences/
 
+``` sql
   CREATE TABLE users ( id SERIAL, name TEXT, age INT4);
   INSERT INTO users (name, age, id) VALUES ('Mozart', 20, DEFAULT);
   SELECT currval(pg_get_serial_sequence('users', 'id'));
+```
 
 ``` bash
 andy@[local]:5432 andy# \d+ users
@@ -55,7 +57,7 @@ andy@[local]:5432 andy# \d+ users
 
   INSERT INTO users (name, age, id) VALUES ('Beethoven', 15, DEFAULT);
 
-  # Now the inserts will fail unless the sequence is created.
+  Now the inserts will fail unless the sequence is created.
 
 ``` bash
   andy@[local]:5432 andy# CREATE SEQUENCE public.really_cool_id_seq START 101;
@@ -73,3 +75,5 @@ andy@[local]:5432 andy# \d+ users
 ```
 
   Now we can see that the second record was inserted, with the starting value from the new sequence. So for AR configuration, I think it would have to create the new sequence, and do an alter table on it. It could take an option of a starting value.
+
+  PR: [https://github.com/andyatkinson/rails/tree/18611_postgres_sequence_issue](https://github.com/andyatkinson/rails/tree/18611_postgres_sequence_issue)
