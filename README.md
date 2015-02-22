@@ -40,7 +40,7 @@ Issues being investigated:
   INSERT INTO users (name, age, id) VALUES ('Mozart', 20, DEFAULT);
   SELECT currval(pg_get_serial_sequence('users', 'id'));
 
-```table  bash
+``` bash
 andy@[local]:5432 andy# \d+ users
                                              Table "public.users"
  Column |  Type   |                     Modifiers                      | Storage  | Stats target | Description
