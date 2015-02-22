@@ -1,3 +1,8 @@
+## Tips
+
+Running a single test? `cd` into the module, e.g. `activerecord` and you can run a single test like `ruby -Itest test/cases/base_test.rb`.
+
+
 Script to generate Rails app to test issues
 
 Copied from [this gist](https://gist.github.com/bronzle/b911103cdbec55edd8b9). To use, run: `ruby sample_app.rb`
@@ -19,4 +24,4 @@ Issues being investigated:
  @sql_type="bigint">
 ```
 
- * [18611](https://github.com/rails/rails/issues/18611)
+ * [18611](https://github.com/rails/rails/issues/18611). postgres accepts `RETURNING` option on `INSERT`. http://www.postgresql.org/docs/8.2/static/sql-insert.html
