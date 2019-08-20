@@ -1,5 +1,3 @@
-    source 'https://rubygems.org'
-    gem 'rails', github: 'rails/rails'
-    gem 'arel', github: 'rails/arel'
-    gem 'rack', github: 'rack/rack'
-    gem 'i18n', github: 'svenfuchs/i18n'
+source 'https://rubygems.org'
+
+gem 'rails'
